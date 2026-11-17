@@ -1,0 +1,208 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background-color: #f5f7fa;
+    color: #1e293b;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 24px;
+    gap: 24px;
+}
+
+/* ---------- Шапка ---------- */
+.resume-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 32px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e2e8f0;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.header-info h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.job-title {
+    font-size: 1.15rem;
+    color: #3b82f6;
+    font-weight: 600;
+}
+
+.slogan {
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-top: 4px;
+}
+
+/* ---------- Навигация ---------- */
+.resume-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 24px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 14px 28px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.resume-nav a {
+    color: #475569;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.resume-nav a:hover {
+    color: #1d4ed8;
+    background-color: #eff6ff;
+}
+
+/* ---------- Основные секции ---------- */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.section {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px 32px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.section h2 {
+    font-size: 1.4rem;
+    color: #0f172a;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+}
+
+.section p {
+    color: #334155;
+    font-size: 1rem;
+}
+
+/* ---------- Образование ---------- */
+.education-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.education-list li {
+    padding-left: 20px;
+    border-left: 3px solid #3b82f6;
+    color: #334155;
+}
+
+.education-list strong {
+    color: #0f172a;
+    font-size: 1.05rem;
+}
+
+/* ---------- Навыки (чипсы) ---------- */
+.skills-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background-color: #dbeafe;
+    color: #1e40af;
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid #bfdbfe;
+}
+
+/* ---------- Подвал / Контакты ---------- */
+.resume-footer {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px 32px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.resume-footer h2 {
+    font-size: 1.4rem;
+    color: #0f172a;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+}
+
+.contacts-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 32px;
+    justify-content: center;
+}
+
+.contacts-wrap a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.contacts-wrap a:hover {
+    color: #1d4ed8;
+    background-color: #eff6ff;
+    text-decoration: underline;
+}
